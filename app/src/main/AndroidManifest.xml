@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EP1">
-        <activity android:name=".Producto2Activity"></activity>
-        <activity android:name=".TarjetaActivity2" />
-        <activity android:name=".ProductoActivity" />
+        <activity android:name=".Estado_rl"></activity>
+        <activity android:name=".Tracking_rl" />
+        <activity android:name=".cuenta_rl" />
         <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
