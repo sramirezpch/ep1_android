@@ -9,6 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EP1">
+        <activity android:name=".Producto2Activity"></activity>
+        <activity android:name=".TarjetaActivity2" />
+        <activity android:name=".ProductoActivity" />
         <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,7 +21,7 @@
         </activity>
         <activity android:name=".forgotPassword" />
         <activity android:name=".signup" />
-        <activity android:name=".login"></activity>
+        <activity android:name=".login" />
         <activity android:name=".MainActivity" />
     </application>
 

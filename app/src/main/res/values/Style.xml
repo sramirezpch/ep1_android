@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="padding">
+        <item name="android:paddingLeft">24px</item>
+        <item name="android:paddingRight">24px</item>
+        <item name="android:radioButtonStyle">32px</item>
+
+    </style>
+
+
+</resources>
