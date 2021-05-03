@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProductoActivity" >
+    tools:context=".ProductoActivity">
 
     <ImageView
         android:id="@+id/imageView141"
@@ -43,7 +43,6 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                style="@style/padding"
                 android:layout_width="174dp"
                 android:layout_height="267dp"
                 android:layout_marginLeft="20dp"
@@ -86,7 +85,6 @@
             </LinearLayout>
 
             <LinearLayout
-                style="@style/padding"
                 android:layout_width="174dp"
                 android:layout_height="267dp"
                 android:layout_marginLeft="20dp"
