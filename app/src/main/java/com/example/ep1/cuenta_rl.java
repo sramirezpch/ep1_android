@@ -27,8 +27,7 @@ public class cuenta_rl extends AppCompatActivity implements View.OnClickListener
 
 
     @Override
-
-public void onClick(View v) {
+    public void onClick(View v) {
         switch(v.getId()) {
             case R.id.rbEditar:
                 startActivity(new Intent(this, PerfilFragment.class));
@@ -39,6 +38,10 @@ public void onClick(View v) {
                 break;
             case R.id.imgRegresar:
                 startActivity(new Intent(this, cuenta_rl.class));
+                finish();
+                break;
+            case R.id.imgIrTarjetas:
+                startActivity(new Intent(this, TarjetaActivity2.class));
                 break;
         }
     }

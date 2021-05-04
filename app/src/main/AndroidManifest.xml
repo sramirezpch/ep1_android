@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EP1">
-        <activity android:name=".Estado_rl"></activity>
+        <activity android:name=".ayuda"></activity>
+        <activity android:name=".acerca_de" />
+        <activity android:name=".sobre_nosotros" />
+        <activity android:name=".Estado_rl" />
         <activity android:name=".Tracking_rl" />
         <activity android:name=".cuenta_rl" />
         <activity android:name=".Splash">

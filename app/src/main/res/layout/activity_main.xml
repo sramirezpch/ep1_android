@@ -8,8 +8,8 @@
 
     <SearchView
         android:id="@+id/searchView2"
-        android:layout_width="230dp"
-        android:layout_height="30dp"
+        android:layout_width="174dp"
+        android:layout_height="28dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,6 +25,16 @@
         app:layout_constraintEnd_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/camera_icon" />
+
+    <ImageView
+        android:id="@+id/imgUsuario"
+        android:layout_width="38dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -49,15 +59,14 @@
         app:layout_constraintTop_toBottomOf="@+id/searchView2" />
 
     <HorizontalScrollView
+        android:id="@+id/horizontalScrollView3"
         android:layout_width="357dp"
         android:layout_height="28dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.296"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewCategories"
-        app:layout_constraintVertical_bias="0.095">
+        app:layout_constraintTop_toBottomOf="@+id/textViewCategories">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -109,20 +118,20 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="0dp"
-        android:layout_height="468dp"
+        android:layout_width="416dp"
+        android:layout_height="wrap_content"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.955">
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView3"
+        app:layout_constraintVertical_bias="0.444">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:orientation="vertical">
 
             <LinearLayout
@@ -141,7 +150,7 @@
                     android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/txtSeeAll"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -290,7 +299,7 @@
                         android:layout_height="wrap_content">
 
                         <LinearLayout
-                            android:id="@+id/linearLayout5"
+                            android:id="@+id/layoutBeats"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:orientation="horizontal"
@@ -325,11 +334,12 @@
                         </LinearLayout>
 
                         <LinearLayout
+                            android:id="@+id/layoutBandO"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_marginLeft="20dp"
                             android:orientation="horizontal"
-                            app:layout_constraintStart_toEndOf="@+id/linearLayout5">
+                            app:layout_constraintStart_toEndOf="@+id/layoutBeats">
 
                             <ImageView
                                 android:id="@+id/imgFeatured1"
