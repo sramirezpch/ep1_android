@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <SearchView
-        android:id="@+id/searchView2"
+        android:id="@+id/searchProductos"
         android:layout_width="174dp"
         android:layout_height="28dp"
         android:layout_marginStart="12dp"
@@ -31,10 +31,11 @@
         android:layout_width="38dp"
         android:layout_height="26dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="User"
         app:layout_constraintEnd_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/user_icon" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -56,11 +57,11 @@
         android:text="Categorías"
         android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchView2" />
+        app:layout_constraintTop_toBottomOf="@+id/searchProductos" />
 
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView3"
-        android:layout_width="357dp"
+        android:layout_width="0dp"
         android:layout_height="28dp"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -118,7 +119,7 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="416dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -303,7 +304,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:orientation="horizontal"
-                            app:layout_constraintStart_toStartOf="parent">
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
 
                             <ImageView
                                 android:id="@+id/imgFeatured2"
@@ -337,9 +339,10 @@
                             android:id="@+id/layoutBandO"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:layout_marginLeft="20dp"
+                            android:layout_marginStart="28dp"
                             android:orientation="horizontal"
-                            app:layout_constraintStart_toEndOf="@+id/layoutBeats">
+                            app:layout_constraintStart_toEndOf="@+id/layoutBeats"
+                            app:layout_constraintTop_toTopOf="parent">
 
                             <ImageView
                                 android:id="@+id/imgFeatured1"

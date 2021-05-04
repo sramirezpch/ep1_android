@@ -50,8 +50,7 @@
                 android:background="@color/blanco_humo"
                 android:dividerPadding="14px"
                 android:orientation="vertical"
-                android:padding="14px"
-                android:paddingRight="14px">
+                android:padding="14dp">
 
                 <ImageView
                     android:id="@+id/imageView1011"
@@ -92,8 +91,7 @@
                 android:background="@color/blanco_humo"
                 android:dividerPadding="14px"
                 android:orientation="vertical"
-                android:padding="14px"
-                android:paddingLeft="14px">
+                android:padding="14dp">
 
                 <ImageView
                     android:id="@+id/imageView17"

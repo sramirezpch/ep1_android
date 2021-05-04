@@ -9,23 +9,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EP1">
-        <activity android:name=".ayuda"></activity>
-        <activity android:name=".acerca_de" />
-        <activity android:name=".sobre_nosotros" />
-        <activity android:name=".Estado_rl" />
-        <activity android:name=".Tracking_rl" />
-        <activity android:name=".cuenta_rl" />
-        <activity android:name=".Splash">
+        <activity android:name=".ayuda"
+            android:label="AYUDA"></activity>
+        <activity android:name=".acerca_de"
+            android:label="ACERCA DE"/>
+        <activity android:name=".mas_informacion"
+            android:label="MAS INFORMACION"/>
+        <activity android:name=".Estado_rl"
+            android:label="HISTORIAL DE PEDIDOS"/>
+        <activity android:name=".Tracking_rl"
+            android:label="ESTADO ACTUAL DE TU PEDIDO"/>
+        <activity android:name=".cuenta_rl"
+            android:label="MI CUENTA"/>
+        <activity android:name=".Splash"
+            android:theme="@style/Theme.EP1.NoActionbar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".forgotPassword" />
-        <activity android:name=".signup" />
-        <activity android:name=".login" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".forgotPassword"
+            android:label="OLVIDE MI CONTRASEÑA"/>
+        <activity android:name=".signup"
+            android:label="REGISTRAR USUARIO"/>
+        <activity android:name=".login"
+            android:label="INICIAR SESION"/>
+        <activity android:name=".MainActivity"
+            android:label="INICIO"/>
     </application>
 
 </manifest>

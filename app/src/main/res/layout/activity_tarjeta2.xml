@@ -34,8 +34,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/linearLayout"
-        android:layout_width="370dp"
-        android:layout_height="177dp"
+        android:layout_width="374dp"
+        android:layout_height="367dp"
         android:layout_marginTop="88dp"
         android:background="#AE4977"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,10 +60,10 @@
             android:text="Pierre Panebra "
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.093"
+            app:layout_constraintHorizontal_bias="0.08"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.865" />
+            app:layout_constraintVertical_bias="0.996" />
 
         <AutoCompleteTextView
             android:id="@+id/autoCompleteTextView5"

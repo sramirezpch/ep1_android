@@ -16,7 +16,7 @@ public class Splash extends AppCompatActivity {
         Handler handler = new Handler(Looper.getMainLooper());
         handler.postDelayed(() -> {
             mostrarLogin();
-        },10000);
+        },2000);
     }
 
     private void mostrarLogin() {

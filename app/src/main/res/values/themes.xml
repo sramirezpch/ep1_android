@@ -16,6 +16,5 @@
     <style name="Theme.EP1.NoActionbar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-
     </style>
 </resources>

@@ -6,7 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.TextView;
+import android.widget.LinearLayout;
+import android.widget.SearchView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -16,10 +17,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         ImageView imagenUsuario = findViewById(R.id.imgUsuario);
-        TextView verProductos = findViewById(R.id.txtSeeAll);
+        SearchView buscarProductos = findViewById(R.id.searchProductos);
+        LinearLayout beatsLayout = findViewById(R.id.layoutBeats);
 
         imagenUsuario.setOnClickListener(this);
-        verProductos.setOnClickListener(this);
+        buscarProductos.setOnClickListener(this);
+        beatsLayout.setOnClickListener(this);
     }
 
     @Override
@@ -28,12 +31,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.imgUsuario:
                 startActivity(new Intent(this, cuenta_rl.class));
                 break;
-            case R.id.txtSeeAll:
-                startActivity(new Intent(this, Producto2Activity.class));
-                break;
             case R.id.layoutBeats:
+                startActivity(new Intent(this, ProductoActivity.class));
                 break;
-            case R.id.layoutBandO:
+            case R.id.searchProductos:
+                startActivity(new Intent(this, Producto2Activity.class));
                 break;
         }
     }

@@ -16,6 +16,7 @@ public class login extends AppCompatActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        getSupportActionBar().setSubtitle("Inicia sesión con una cuenta registrada");
 
         Button btnIngresar = findViewById(R.id.btnLogin);
         TextView textRegistrar = findViewById(R.id.textViewSignUp);
@@ -68,7 +69,7 @@ public class login extends AppCompatActivity implements View.OnClickListener {
     }
 
     private void mostrarSobreNosotros() {
-        startActivity(new Intent(this, sobre_nosotros.class));
+        startActivity(new Intent(this, mas_informacion.class));
     }
     private void mostrarAyuda() {
         startActivity(new Intent(this, ayuda.class));
