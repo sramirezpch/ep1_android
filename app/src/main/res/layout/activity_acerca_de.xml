@@ -6,4 +6,69 @@
     android:layout_height="match_parent"
     tools:context=".acerca_de">
 
+    <LinearLayout
+        android:id="@+id/contendor"
+        android:layout_width="338dp"
+        android:layout_height="410dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/melon"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="330dp"
+            android:layout_height="407dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="52dp"
+            android:text=" What is Lorem Ipsum?  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.  What is Lorem Ipsum?  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. " />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="110dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="52dp"
+        android:text="Sobre Nosotros::"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/contendor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+        <RadioButton
+            android:id="@+id/rbQuienes"
+            android:layout_width="115dp"
+            android:layout_height="match_parent"
+            android:text="Quienes Somos" />
+
+        <RadioButton
+            android:id="@+id/rbMision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Misión" />
+
+        <RadioButton
+            android:id="@+id/rbHistoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Historia" />
+    </RadioGroup>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,18 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EP1">
-        <activity android:name=".ayuda"></activity>
-        <activity android:name=".acerca_de" />
-        <activity android:name=".sobre_nosotros" />
-        <activity android:name=".Estado_rl" />
-        <activity android:name=".Tracking_rl" />
-        <activity android:name=".cuenta_rl" />
+        <activity android:name=".Producto2Activity"></activity>
+        <activity android:name=".TarjetaActivity2" >
+
+        </activity>
+        <activity android:name=".ProductoActivity" />
         <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity android:name=".forgotPassword" />
         <activity android:name=".signup" />
