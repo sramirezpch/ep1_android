@@ -6,63 +6,66 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <SearchView
-        android:id="@+id/searchProductos"
-        android:layout_width="174dp"
-        android:layout_height="28dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="49dp"
-        android:layout_height="28dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:contentDescription="@string/camera"
-        app:layout_constraintEnd_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/camera_icon" />
-
-    <ImageView
-        android:id="@+id/imgUsuario"
-        android:layout_width="38dp"
-        android:layout_height="26dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="20dp"
-        android:contentDescription="User"
-        app:layout_constraintEnd_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/user_icon" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="49dp"
-        android:layout_height="28dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="12dp"
-        android:contentDescription="@string/filter"
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="22dp"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/filter_icon" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <SearchView
+            android:id="@+id/searchProductos"
+            android:layout_width="154dp"
+            android:layout_height="26dp"
+            android:layout_marginRight="50dp">
+
+        </SearchView>
+
+        <ImageView
+            android:id="@+id/imgUsuario"
+            android:layout_width="38dp"
+            android:layout_height="26dp"
+            android:layout_marginRight="22dp"
+            tools:srcCompat="@drawable/user_icon" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="49dp"
+            android:layout_height="28dp"
+            android:layout_marginRight="22dp"
+            android:contentDescription="@string/camera"
+            app:srcCompat="@drawable/camera_icon" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="49dp"
+            android:layout_height="28dp"
+            android:contentDescription="@string/filter"
+            app:srcCompat="@drawable/filter_icon" />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textViewCategories"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:text="Categorías"
         android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchProductos" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
 
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView3"
         android:layout_width="0dp"
         android:layout_height="28dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.296"
@@ -166,12 +169,12 @@
             <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:paddingTop="20dp"
                 android:visibility="visible">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:textAlignment="center">
 
@@ -217,7 +220,7 @@
                                 android:layout_marginTop="20dp"
                                 android:text="$450"
                                 android:textAlignment="center"
-                                android:textColor="#E307F3" />
+                                android:textColor="@color/rosa" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -259,7 +262,7 @@
                                 android:layout_marginTop="20dp"
                                 android:text="$755"
                                 android:textAlignment="center"
-                                android:textColor="#E307F3" />
+                                android:textColor="@color/rosa" />
                         </LinearLayout>
                     </androidx.constraintlayout.widget.ConstraintLayout>
 

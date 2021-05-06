@@ -7,36 +7,25 @@
     android:background="@drawable/beats1"
     tools:context=".Producto2Activity">
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="43dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="352dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/arrowleft" />
-
     <ScrollView
-        android:layout_width="414dp"
-        android:layout_height="552dp"
-        android:layout_marginTop="48dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/beatsdhead"
             android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/scrollView2"
                 android:layout_width="414dp"
                 android:layout_height="655dp"
-                android:layout_marginTop="80dp"
-                android:background="@color/blanco_humo"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
@@ -86,6 +75,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Beats by Dr. Dre"
+                                android:textAlignment="center"
                                 android:textColor="#000000"
                                 android:textSize="18sp" />
 
@@ -94,6 +84,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Plug And Play"
+                                android:textAlignment="center"
                                 android:textSize="12sp" />
 
                             <TextView
@@ -103,7 +94,8 @@
                                 android:layout_marginTop="20dp"
                                 android:autoText="true"
                                 android:text="$155"
-                                android:textColor="#E307F3" />
+                                android:textAlignment="center"
+                                android:textColor="@color/rosa" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -123,6 +115,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Beats Solo 3 "
+                                android:textAlignment="center"
                                 android:textColor="#000000"
                                 android:textSize="18sp" />
 
@@ -131,6 +124,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Wireless"
+                                android:textAlignment="center"
                                 android:textSize="12sp" />
 
                             <TextView
@@ -140,7 +134,8 @@
                                 android:layout_marginTop="20dp"
                                 android:autoText="true"
                                 android:text="$99"
-                                android:textColor="#E307F3" />
+                                android:textAlignment="center"
+                                android:textColor="@color/rosa" />
                         </LinearLayout>
                     </LinearLayout>
                 </HorizontalScrollView>
@@ -188,6 +183,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Beats By Dr. Dre 2"
+                                android:textAlignment="center"
                                 android:textColor="#000000"
                                 android:textSize="18sp" />
 
@@ -196,6 +192,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Bang and Olufsen"
+                                android:textAlignment="center"
                                 android:textSize="12sp" />
 
                             <TextView
@@ -205,7 +202,8 @@
                                 android:layout_marginTop="20dp"
                                 android:autoText="true"
                                 android:text="$755"
-                                android:textColor="#E307F3" />
+                                android:textAlignment="center"
+                                android:textColor="@color/rosa" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -225,6 +223,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Beats 2 True Wireless"
+                                android:textAlignment="center"
                                 android:textColor="#000000"
                                 android:textSize="18sp" />
 
@@ -233,6 +232,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Tag Heuer"
+                                android:textAlignment="center"
                                 android:textSize="12sp" />
 
                             <TextView
@@ -242,7 +242,8 @@
                                 android:layout_marginTop="20dp"
                                 android:autoText="true"
                                 android:text="$450"
-                                android:textColor="#E307F3" />
+                                android:textAlignment="center"
+                                android:textColor="@color/rosa" />
                         </LinearLayout>
                     </LinearLayout>
                 </HorizontalScrollView>

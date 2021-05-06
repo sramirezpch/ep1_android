@@ -6,16 +6,67 @@
     android:layout_height="match_parent"
     tools:context=".mas_informacion">
 
-    <TextView
-        android:id="@+id/textView12"
+    <LinearLayout
+        android:id="@+id/contendor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed libero enim sed faucibus. Pulvinar etiam non quam lacus suspendisse faucibus. Gravida cum sociis natoque penatibus. Placerat in egestas erat imperdiet sed euismod nisi. Tortor pretium viverra suspendisse potenti nullam ac. Tellus molestie nunc non blandit massa enim nec. Est placerat in egestas erat imperdiet sed. Vitae sapien pellentesque habitant morbi tristique senectus et. Nisl rhoncus mattis rhoncus urna neque viverra justo. Dictum varius duis at consectetur lorem donec massa. Donec ac odio tempor orci dapibus ultrices in iaculis nunc. Elit sed vulputate mi sit amet. Porttitor eget dolor morbi non arcu. Placerat orci nulla pellentesque dignissim enim sit amet."
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/melon"
+            android:padding="22dp"
+            android:text=" What is Lorem Ipsum?  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.  What is Lorem Ipsum?  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. " />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="32dp"
+        android:text="Acerca de nosotros"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/rbQuienes"
+            android:layout_width="115dp"
+            android:layout_height="match_parent"
+            android:text="Quienes Somos" />
+
+        <RadioButton
+            android:id="@+id/rbMision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Misión" />
+
+        <RadioButton
+            android:id="@+id/rbHistoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Historia" />
+    </RadioGroup>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

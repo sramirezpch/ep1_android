@@ -55,26 +55,25 @@ public class login extends AppCompatActivity implements View.OnClickListener {
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle item selection
         switch (item.getItemId()) {
-            case R.id.nav_sobre_nosotros:
-                mostrarSobreNosotros();
+            case R.id.nav_mas_informacion:
+                mostrarMasInformacion();
                 return true;
             case R.id.nav_ayuda:
                 mostrarAyuda();
                 return true;
-            case R.id.nav_acerca_de:
-                mostrarAcercaDe();
+            case R.id.nav_contacto:
+                mostrarContacto();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
 
-    private void mostrarSobreNosotros() {
+    private void mostrarMasInformacion() {
         startActivity(new Intent(this, mas_informacion.class));
     }
     private void mostrarAyuda() {
         startActivity(new Intent(this, ayuda.class));
     }
-    private void mostrarAcercaDe() {
-        startActivity(new Intent(this, acerca_de.class));
-    }
+    private void mostrarContacto() { startActivity(new Intent(this, contacto.class)); }
 }
