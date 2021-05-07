@@ -1,8 +1,10 @@
 package com.example.ep1;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.RadioButton;
 
@@ -27,6 +29,14 @@ public class mas_informacion extends AppCompatActivity implements View.OnClickLi
     }
 
     @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId() == android.R.id.home){
+            finish();
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.rbHistoria:
@@ -43,16 +53,16 @@ public class mas_informacion extends AppCompatActivity implements View.OnClickLi
     }
 
     private void mostrarQuienes() {
-        getSupportFragmentManager().beginTransaction().replace(R.id.contendor, new HistoriaFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.contenedor, new QuienesFragment()).commit();
 
     }
 
     private void mostrarMision() {
-        getSupportFragmentManager().beginTransaction().replace(R.id.contendor, new MisionFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.contenedor, new MisionFragment()).commit();
     }
 
     private void mostrarHistoria() {
-        getSupportFragmentManager().beginTransaction().replace(R.id.contendor, new HistoriaFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.contenedor, new HistoriaFragment()).commit();
     }
 
     @Override
