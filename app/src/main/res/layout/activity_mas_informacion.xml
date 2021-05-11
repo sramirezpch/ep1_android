@@ -28,6 +28,8 @@
                 android:id="@+id/rbMision"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
+                android:background="@color/melon"
+                android:buttonTint="@color/rosa"
                 android:checked="false"
                 android:linksClickable="true"
                 android:onClick="onClick"
@@ -37,14 +39,18 @@
                 android:id="@+id/rbQuienes"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
+                android:background="@color/melon"
+                android:buttonTint="@color/rosa"
                 android:linksClickable="true"
                 android:onClick="onClick"
-                android:text="Quienes Somos" />
+                android:text="Quienes..." />
 
             <RadioButton
                 android:id="@+id/rbHistoria"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
+                android:background="@color/melon"
+                android:buttonTint="@color/rosa"
                 android:linksClickable="true"
                 android:onClick="onClick"
                 android:text="Historia" />
