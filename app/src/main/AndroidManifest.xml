@@ -20,13 +20,13 @@
             android:label="Productos de Beats" />
         <activity
             android:name=".TarjetaActivity2"
-            android:label="Mis tarjetas" />
+            android:label="Editar tarjeta" />
         <activity
             android:name=".ayuda"
             android:label="Ayuda" />
         <activity
             android:name=".contacto"
-            android:label="Más Información" />
+            android:label="Contacto" />
         <activity android:name=".Estado_rl" />
         <activity
             android:name=".Tracking_rl"

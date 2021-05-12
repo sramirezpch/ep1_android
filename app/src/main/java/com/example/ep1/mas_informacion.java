@@ -54,7 +54,6 @@ public class mas_informacion extends AppCompatActivity implements View.OnClickLi
 
     private void mostrarQuienes() {
         getSupportFragmentManager().beginTransaction().replace(R.id.contenedor, new QuienesFragment()).commit();
-
     }
 
     private void mostrarMision() {

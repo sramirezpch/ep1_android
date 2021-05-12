@@ -39,7 +39,7 @@
         app:srcCompat="@drawable/usuario" />
 
     <LinearLayout
-        android:id="@+id/llAcciones"
+        android:id="@+id/contenedorAcciones"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"

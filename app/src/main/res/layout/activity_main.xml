@@ -10,11 +10,10 @@
         android:id="@+id/linearLayout4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="22dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="16dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -28,7 +27,7 @@
 
         <ImageView
             android:id="@+id/imgUsuario"
-            android:layout_width="38dp"
+            android:layout_width="41dp"
             android:layout_height="26dp"
             android:layout_marginRight="22dp"
             tools:srcCompat="@drawable/user_icon" />
@@ -43,7 +42,7 @@
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="49dp"
+            android:layout_width="match_parent"
             android:layout_height="28dp"
             android:contentDescription="@string/filter"
             app:srcCompat="@drawable/filter_icon" />

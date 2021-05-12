@@ -20,9 +20,11 @@ public class cuenta_rl extends AppCompatActivity implements View.OnClickListener
 
         RadioButton mrbEditar = findViewById(R.id.rbEditar);
         ImageView imgIrSeguimiento = findViewById(R.id.imgIrSeguimiento);
+        ImageView imgIrTarjetas = findViewById(R.id.imgIrTarjetas);
 
         mrbEditar.setOnClickListener(this);//para ir de cuenta_rl a PerfilFragment
         imgIrSeguimiento.setOnClickListener(this);//Para ir de cuenta_rl a Tracking_rl
+        imgIrTarjetas.setOnClickListener(this);//Para ir de cuenta_rl a TarjetaActivity2
     }
 
     @Override
@@ -37,8 +39,7 @@ public class cuenta_rl extends AppCompatActivity implements View.OnClickListener
     public void onClick(View v) {
         switch(v.getId()) {
             case R.id.rbEditar:
-                startActivity(new Intent(this, PerfilFragment.class));
-                break;
+                mostrarEditarPerfil();
             case R.id.imgIrSeguimiento:
                 startActivity(new Intent(this, Tracking_rl.class));
                 break;
@@ -46,5 +47,9 @@ public class cuenta_rl extends AppCompatActivity implements View.OnClickListener
                 startActivity(new Intent(this, TarjetaActivity2.class));
                 break;
         }
+    }
+
+    private void mostrarEditarPerfil() {
+        getSupportFragmentManager().beginTransaction().replace(R.id.contenedorAcciones, new PerfilFragment()).commit();
     }
 }
