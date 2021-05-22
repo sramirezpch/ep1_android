@@ -8,13 +8,10 @@
     tools:context=".Producto2Activity">
 
     <ScrollView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="397dp"
+        android:layout_height="649dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintEnd_toEndOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -27,7 +24,9 @@
                 android:layout_width="414dp"
                 android:layout_height="655dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent"
+                android:backgroundTint="@color/white"
+                android:background="@color/blanco_pierre">
 
                 <TextView
                     android:id="@+id/textView31"
@@ -35,6 +34,8 @@
                     android:layout_height="20dp"
                     android:layout_marginTop="16dp"
                     android:text="15 Resultados"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.053"
                     app:layout_constraintStart_toStartOf="parent"
@@ -102,7 +103,8 @@
                             android:layout_width="197dp"
                             android:layout_height="match_parent"
                             android:background="@color/cardview_light_background"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            android:layout_marginLeft="24dp">
 
                             <ImageView
                                 android:id="@+id/imageView17"
@@ -210,7 +212,8 @@
                             android:layout_width="197dp"
                             android:layout_height="match_parent"
                             android:background="@color/cardview_light_background"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            android:layout_marginLeft="24dp">
 
                             <ImageView
                                 android:id="@+id/imageView200"
