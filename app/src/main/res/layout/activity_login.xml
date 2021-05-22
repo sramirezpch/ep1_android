@@ -13,6 +13,7 @@
         android:layout_height="35dp"
         android:layout_marginTop="20dp"
         android:background="#547C7676"
+        android:backgroundTint="@color/melon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
@@ -138,7 +139,9 @@
         android:layout_width="310dp"
         android:layout_height="50dp"
         android:layout_marginTop="40dp"
+        android:backgroundTint="@color/melon"
         android:text="Ingresar"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/view"
         app:layout_constraintStart_toStartOf="@+id/view"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
@@ -163,6 +166,7 @@
         android:layout_height="35dp"
         android:layout_marginTop="20dp"
         android:background="#547C7676"
+        android:backgroundTint="@color/melon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewOr" />
