@@ -38,6 +38,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/usuario" />
 
+    <RadioButton
+        android:id="@+id/rbEditar"
+        android:layout_width="144dp"
+        android:layout_height="30dp"
+        android:text="@string/editar_perfil"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
     <LinearLayout
         android:id="@+id/contenedorAcciones"
         android:layout_width="0dp"
@@ -56,17 +65,19 @@
 
             <ImageView
                 android:id="@+id/imgDireccion"
-                android:layout_width="60dp"
+                android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
+                android:background="@drawable/fondo_boton"
                 android:contentDescription="@string/ir_direccion"
-                app:srcCompat="@drawable/ic_baseline_map_24" />
+                app:srcCompat="@drawable/ic_baseline_location_on_24" />
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="190dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
+                android:paddingLeft="20dp"
                 android:text="@string/direccion_de_entrega"
                 android:textAlignment="textStart"
                 android:textSize="20sp" />
@@ -90,9 +101,10 @@
 
             <ImageView
                 android:id="@+id/imgWishList"
-                android:layout_width="60dp"
+                android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
+                android:background="@drawable/fondo_boton"
                 android:contentDescription="@string/wishlist"
                 app:srcCompat="@drawable/ic_baseline_production_quantity_limits_24" />
 
@@ -101,6 +113,7 @@
                 android:layout_width="190dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
+                android:paddingLeft="20dp"
                 android:text="@string/wish_list"
                 android:textAlignment="textStart"
                 android:textSize="20sp" />
@@ -123,9 +136,10 @@
 
             <ImageView
                 android:id="@+id/imgHistoriaOrdenes"
-                android:layout_width="60dp"
+                android:layout_width="2dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
+                android:background="@drawable/fondo_boton"
                 android:contentDescription="@string/historiaordenes"
                 app:srcCompat="@drawable/ic_baseline_reorder_24" />
 
@@ -134,7 +148,7 @@
                 android:layout_width="190dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
-                android:paddingTop="5dp"
+                android:paddingLeft="20dp"
                 android:text="@string/historia_de_ordenes"
                 android:textSize="20sp" />
 
@@ -156,6 +170,8 @@
             <ImageView
                 android:id="@+id/imgFollowUp"
                 style="@style/Tarjetas"
+                android:layout_width="2dp"
+                android:background="@drawable/fondo_boton"
                 android:contentDescription="@string/followup"
                 app:srcCompat="@drawable/ic_baseline_input_24" />
 
@@ -164,6 +180,8 @@
                 android:layout_width="190dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
                 android:text="@string/seguimiento"
                 android:textSize="20sp" />
 
@@ -174,6 +192,7 @@
                 android:layout_weight="1"
                 android:contentDescription="@string/ir_a_seguimiento"
                 app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -186,9 +205,10 @@
             <ImageView
                 android:id="@+id/imgTarjetas"
                 style="@style/Tarjetas"
-                android:layout_width="60dp"
+                android:layout_width="2dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
+                android:background="@drawable/fondo_boton"
                 android:contentDescription="Tarjetas"
                 app:srcCompat="@drawable/ic_baseline_credit_card_24" />
 
@@ -197,6 +217,7 @@
                 android:layout_width="190dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
+                android:paddingLeft="20dp"
                 android:text="Tarjetas de Crédito"
                 android:textSize="20sp" />
 
@@ -218,9 +239,10 @@
 
             <ImageView
                 android:id="@+id/imgNotificaciones"
-                android:layout_width="60dp"
+                android:layout_width="3dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
+                android:background="@drawable/fondo_boton"
                 android:contentDescription="@string/notificaciones"
                 app:srcCompat="@drawable/ic_baseline_notifications_none_24" />
 
@@ -229,6 +251,7 @@
                 android:layout_width="190dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
+                android:paddingLeft="20dp"
                 android:text="@string/notificaciones"
                 android:textSize="20sp" />
 
@@ -239,18 +262,10 @@
                 android:layout_weight="1"
                 android:contentDescription="@string/notificaciones"
                 app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24" />
+
         </LinearLayout>
 
     </LinearLayout>
-
-    <RadioButton
-        android:id="@+id/rbEditar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/editar_perfil"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/imageView6"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

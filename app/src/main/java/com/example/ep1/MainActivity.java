@@ -18,8 +18,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
         decorView = getWindow().getDecorView();//2) Ocultar las barras de estado y de navegación
         decorView.setOnSystemUiVisibilityChangeListener(new View.OnSystemUiVisibilityChangeListener() {
             @Override // 4) Ocultar las barras de estado y de navegación
