@@ -9,25 +9,23 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="150dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
         android:layout_marginTop="36dp"
-        android:background="@drawable/fondo_boton"
         android:text="CANCELAR"
-        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="150dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/fondo_boton"
+        android:layout_marginStart="36dp"
         android:text="GUARDAR"
-        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toEndOf="@+id/button"
         app:layout_constraintTop_toTopOf="@+id/button" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -35,7 +33,7 @@
         android:layout_width="369dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:background="@drawable/fondo_boton"
+        android:background="#AE4977"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
